@@ -32,6 +32,7 @@
                         <th ng-click="sortBy('studio')">Studio</th>
                         <th ng-click="sortBy('grossSales')">Sales</th>
                         <th ng-click="sortBy('ticketsSold')">Tickets</th>
+                        <th ng-click="sortBy('releaseDate')">Release Date</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -40,6 +41,7 @@
                         <td>{{movie.studio}}</td>
                         <td>{{movie.grossSales | currency : '$' : 0}}</td>
                         <td>{{movie.ticketsSold | number}}</td>
+                        <td>{{movie.releaseDate | date : 'longDate'}}</td>
                     </tr>
                 </tbody>
             </table>
